@@ -1,0 +1,10 @@
+# Docker-compose file used for local development (use `docker compose up` and `docker compose down`)
+
+version: "3"
+services:
+  website-db:
+    image: postgres:13
+    environment:
+      - POSTGRES_PASSWORD=12345678
+    ports:
+      - 5432:5432
